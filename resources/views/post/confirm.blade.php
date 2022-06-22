@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<x-layout>
+    <x-slot name="title">
+        確認
+    </x-slot>
 
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    <title>確認 - LikeInsta</title>
-</head>
-<body>
-    <div class="container">
-        <h3>確認画面</h3>
+    <h3>確認画面</h3>
         <form action="{{ route('store') }}" method="post" class="">
             @csrf
             <label class="mar">
@@ -29,6 +22,4 @@
             <button class="mar">送信</button>
         </form>
         <a href="{{ route('top') }}">トップへ戻る</a>
-    </div>
-</body>
-</html>
+</x-layout>

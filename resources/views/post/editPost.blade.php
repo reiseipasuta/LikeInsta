@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<x-layout>
+    <x-slot name="title">
+        編集
+    </x-slot>
 
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    <title>投稿編集 - LikeInsta</title>
-</head>
-<body>
-    <div class="container">
-        <h3>投稿内容編集</h3>
+    <h3>投稿内容編集</h3>
             <p>名前：{{ $post->name }}</p>
             <form action="{{ route('editPost', $post) }}" method="post">
                 @csrf
@@ -37,6 +30,4 @@
             </form>
 
             <a href="{{ route('top') }}">トップへ戻る</a>
-    </div>
-</body>
-</html>
+</x-layout>

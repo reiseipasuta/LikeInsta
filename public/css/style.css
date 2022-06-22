@@ -9,6 +9,7 @@
 
 a {
     text-decoration: none;
+    color:darkblue;
 }
 
 input {
@@ -22,13 +23,47 @@ textarea {
     height: 200px;
 }
 
+ul {
+    text-align: center;
+}
+
+li {
+    width: 200px;
+    border-radius: 50% 20% / 10% 40%;
+    background-color: rgb(177, 226, 228);
+    margin: 30px 30px;
+    text-decoration: none;
+    list-style: none;
+    vertical-align:middle;
+    padding: 10px 0;
+
+}
+
+h2 {
+    color: white;
+    width: 850px;
+    background-color: #88b5cd;
+    border-left: solid 10px #d1dcae;
+    padding-left: 20px;
+}
+
+button {
+    background-color: rgb(177, 226, 228);
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    color:darkblue;
+    margin: 10px;
+}
+
+
 .mar {
     display: block;
     margin-top: 20px;
 }
 
 .name {
-    font-size: 55px;
+    font-size: 50px;
     padding-left: 40px;
     padding-bottom: 30px;
 }
@@ -40,13 +75,13 @@ textarea {
 
 .menu {
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .link {
     background-color: rgb(151, 188, 199);
-    height: 25px;
-    width: 140px;
+    padding: 5px 20px 5px 0;
+
     border-radius: 20rem;
     text-align: center;
     display: inline-block;
@@ -85,18 +120,17 @@ img {
 }
 
 .top_image {
-  height: 300px;
   margin-bottom: 15px;
 }
 
 .contants_text {
-    border-radius: 10% / 50%;
+    text-align: left;
 }
 
 .contants_text1 {
     background-color: rgb(220, 231, 198);
-    height: 20px;
-    width:300px;
+    padding: 5px 0;
+    width:350px;
     margin: 0 auto;
 
 }
@@ -108,25 +142,59 @@ img {
 
 .contants_text2 {
     background-color: rgb(205, 231, 222);
+    padding: 5px 0;
     height: 20px;
-    width:300px;
+    width:350px;
     margin: 0 auto;
 
 }
 
 .contants_text3 {
     background-color: rgb(202, 207, 224);
+    padding: 5px 0;
     height: 20px;
-    width:300px;
+    width:350px;
     margin: 0 auto;
 }
 
 .contants_comment {
     background-color: rgb(225, 204, 220);
-    width:300px;
+    padding: 5px 0;
+    width:350px;
     margin: 0 auto;
 }
 
 .left {
     text-align: left;
 }
+
+.link-n {
+    margin-bottom: 50px;
+}
+
+.show_manu {
+    display: flex;
+}
+
+.show_manu > form, a {
+    margin-left: 20px;
+}
+
+.edit {
+    background-color: rgb(177, 226, 228);
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    color:darkblue;
+    margin: 10px;
+    padding: 0 20px;
+}
+
+
+/* paginate */
+
+.block {
+    display: block;
+    text-align: center;
+}
+

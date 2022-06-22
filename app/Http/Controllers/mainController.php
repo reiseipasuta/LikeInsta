@@ -11,10 +11,14 @@ class mainController extends Controller
 {
     public function getTop ()
     {
-        $posts = Post::orderBy('id', 'desc')->get();
-        $comments = Comment::orderBy('id', 'desc')->get();
+        $posts = Post::with(['comments' => function($query) {
+            $query->orderBy('id', 'desc');
+        }])->orderBy('id', 'desc')->paginate(6);
+        // $posts = Post::orderBy('id', 'desc')->get();
+        // $comments = Comment::orderBy('id', 'desc')->get();
+        
 
         return view('top')
-            ->with(['posts' => $posts, 'comments' => $comments]);
+            ->with(['posts' => $posts]);
     }
 }

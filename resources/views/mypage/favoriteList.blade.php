@@ -1,27 +1,33 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    <title>いいね一覧 - LikeInsta</title>
-</head>
-<body>
-    <div class="container">
-        いいね一覧
-        <ul>
-            @foreach ($posts as $post)
-            <a href="{{ route('showPost', $post) }}">
-                <li>{{ $post->title }}</li>
-            </a>
-            @endforeach
-        </ul>
+<x-layout>
+    <x-slot name="title">
+        いいねリスト
+    </x-slot>
+    いいね一覧
+    <div class="contants">
+        @foreach ($posts as $post)
+            <div class="item">
+                <a href="{{ route('showPost', $post) }}">
+                <div class="top_image">
+                    <img src="{{ $post->image_path }}" class="img_top rounded-pill">
+                </div>
+                <div class="content_text">
+                    <div class="contants_text1"><span class="left">name:</span>{{ $post->name }}</div>
+                    <div class="contants_text2"><span class="left">title:<span>{{ $post->title }}</div>
+                    <div class="contants_text3"><span class="left">comment:</span>{{ $post->body }}</div>
+                    <div class="contants_comment">
+                        みんなのコメント：<br>
+                        @foreach ($post->comments as $comment)
+                            @if($loop->index < 3)
+                                {{ $comment->body }}<br>
+                            @endif
+                        @endforeach
+                    </div>
+                </div>
+                </a>
+            </div>
+        @endforeach
+    </div>
 
         <a href="{{ route('dashboard') }}">メニューへ戻る</a>
         <a href="{{ route('top') }}">トップへ戻る</a>
-    </div>
-
-
-</body>
-</html>
+</x-layout>
