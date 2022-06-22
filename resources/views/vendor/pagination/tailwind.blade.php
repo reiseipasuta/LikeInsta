@@ -5,14 +5,15 @@
 
         <!-- 前へ移動ボタン -->
         @if ($paginator->onFirstPage())
-             ⇦前へ
+        <img class="yajirusi" src="https://chicodeza.com/wordpress/wp-content/uploads/yajirushi-illust72.png" alt="">
         @else
                 <a href="{{ $paginator->previousPageUrl() }}">
-                    ⇦前へ
+                    <img class="yajirusi" src="https://chicodeza.com/wordpress/wp-content/uploads/yajirushi-illust72.png" alt="">
                 </a>
         @endif
 
         <!-- ページ番号　-->
+        
         @foreach ($elements as $element)
             @if (is_string($element))
                     {{ $element }}
@@ -32,12 +33,12 @@
         <!-- 次へ移動ボタン -->
         @if ($paginator->hasMorePages())
                 <a href="{{ $paginator->nextPageUrl() }}">
-                    次へ⇨
+                    <img class="yajirusi" src="https://chicodeza.com/wordpress/wp-content/uploads/yajirushi-illust71.png" alt="">
                 </a>
         @else
-                次へ⇨
+                <img class="yajirusi" src="https://chicodeza.com/wordpress/wp-content/uploads/yajirushi-illust71.png" alt="">
         @endif
-    </nav>
+
 @endif
 
-</div>
+

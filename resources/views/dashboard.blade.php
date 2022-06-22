@@ -3,6 +3,7 @@
         会員メニュー
     </x-slot>
 
+    <h2>会員メニュー</h2>
     <ul>
         <li>
             <a href="{{ route('showMyPost') }}">投稿一覧</a>

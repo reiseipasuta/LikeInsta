@@ -2,7 +2,7 @@
     <x-slot name="title">
         いいねリスト
     </x-slot>
-    いいね一覧
+    <h2>いいね一覧</h2>
     <div class="contants">
         @foreach ($posts as $post)
             <div class="item">

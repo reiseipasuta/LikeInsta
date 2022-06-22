@@ -197,12 +197,12 @@ class postsController extends Controller
 
     public function ranking()
     {
-        $posts = Post::withCount('favoriteUsers')->orderBy('favorite_users_count', 'desc')->get();
-        $comments = Comment::orderBy('id', 'desc')->get();
+        $posts = Post::withCount('favoriteUsers')->with('favoriteUsers')->orderBy('favorite_users_count', 'desc')->paginate(6);
+        // $comments = Comment::orderBy('id', 'desc')->get();
         // $co = Post::Count('favoriteUsers')->('favorite_users_count', 'desc')->get();
         // return $lists;
         return view('ranking')
-        ->with(['posts' => $posts, 'comments' => $comments]);
+        ->with(['posts' => $posts]);
     }
 
 

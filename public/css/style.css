@@ -47,6 +47,14 @@ h2 {
     padding-left: 20px;
 }
 
+h3 {
+    color: rgb(100, 100, 100);
+    width: 850px;
+    background-color: #c8c9b5;
+    border-left: solid 10px #d1dcae;
+    padding-left: 20px;
+}
+
 button {
     background-color: rgb(177, 226, 228);
     border: none;
@@ -190,11 +198,31 @@ img {
     padding: 0 20px;
 }
 
+.follow {
+    width: 200px;
+    border-radius: 50% 20% / 10% 40%;
+    background-color: rgb(177, 226, 228);
+    margin: 10px 30px;
+    text-decoration: none;
+    list-style: none;
+    vertical-align:middle;
+    padding: 10px 0;
+}
+
+.comment_form {
+    margin: 20px 0 30px 0;
+}
+
 
 /* paginate */
 
 .block {
-    display: block;
+    vertical-align: middle;
     text-align: center;
 }
 
+.yajirusi {
+    padding-top: 30px;
+    width: 40px;
+    height: 40px;
+}

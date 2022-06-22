@@ -9,7 +9,7 @@
 
     <h2>投稿一覧</h2>
 
-    <p>名前：{{ $name }}</p>
+    <h3>名前：{{ $name }}</h3>
     <div class="contants">
         @foreach ($posts as $post)
             <div class="item">

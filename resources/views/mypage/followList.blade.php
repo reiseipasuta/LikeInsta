@@ -3,14 +3,15 @@
     フォローリスト
     </x-slot>
 
-        {{ $title }}ユーザー一覧
-        <ul>
+        <h2>{{ $title }}ユーザー一覧</h2>
             @foreach ($lists as $list)
+            <div class="follow">
             <a href="{{ route('getUserPage', $list) }}">
-                <li>{{ $list->name }}</li>
+                {{ $list->name }}
             </a>
+            </div>
             @endforeach
-        </ul>
+
 
         <a href="{{ route('dashboard') }}">メニューへ戻る</a>
         <a href="{{ route('top') }}">トップへ戻る</a>

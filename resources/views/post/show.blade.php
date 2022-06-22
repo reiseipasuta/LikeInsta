@@ -55,7 +55,7 @@
         <h3>コメントする</h3>
         <form action="{{ route('commentStore', $post) }}" method="post">
             @csrf
-            <input type="text" name="body">
+            <input type="text" name="body" class="comment_form">
             <button>送信</button>
         </form>
     </div>

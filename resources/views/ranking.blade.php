@@ -9,7 +9,7 @@
             <a href="{{ route('showPost', $post) }}">
                 <div class="item">
                     <div class="top_image">
-                        <div class="ranking">◆ {{ $loop->iteration }}位</div>
+                        <div class="ranking">◆ {{ $loop->iteration }}位　いいね数：{{ $post->favorite_users_count }}</div>
                         <img src="{{ $post->image_path }}" class="img_top rounded-pill">
                     </div>
                     <div class="content_text">
@@ -29,5 +29,7 @@
                 </div>
             @endforeach
         </div>
+        <div class="link-n">{{ $posts->links() }}</div>
+
         <a href="{{ route('top') }}">トップへ戻る</a>
 </x-layout>
