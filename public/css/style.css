@@ -1,0 +1,132 @@
+.container {
+    max-width: 900px;
+
+    margin: 0 auto;
+    background: linear-gradient(white, #eaffdd, #ceeeff, white);
+    padding:20px 0 0 20px;
+    font-family: Courier New;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    display: block;
+    width: 50%;
+}
+
+textarea {
+    display: block;
+    width: 80%;
+    height: 200px;
+}
+
+.mar {
+    display: block;
+    margin-top: 20px;
+}
+
+.name {
+    font-size: 55px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+}
+
+.titlemenu {
+    display: flex;
+    align-items: baseline;
+}
+
+.menu {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.link {
+    background-color: rgb(151, 188, 199);
+    height: 25px;
+    width: 140px;
+    border-radius: 20rem;
+    text-align: center;
+    display: inline-block;
+}
+
+
+img {
+    max-height: 400px;
+}
+
+.img_top {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50% 20% / 10% 40%;
+}
+
+.contants {
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.item {
+    padding: 30px 0;
+    width: 45%;
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 15px auto;
+}
+
+.ranking {
+    font-size: 20px;
+    margin-top: 20px;
+    color: chocolate;
+}
+
+.top_image {
+  height: 300px;
+  margin-bottom: 15px;
+}
+
+.contants_text {
+    border-radius: 10% / 50%;
+}
+
+.contants_text1 {
+    background-color: rgb(220, 231, 198);
+    height: 20px;
+    width:300px;
+    margin: 0 auto;
+
+}
+
+.contants_text1 span{
+    text-align: left;
+    display: inline-block;
+}
+
+.contants_text2 {
+    background-color: rgb(205, 231, 222);
+    height: 20px;
+    width:300px;
+    margin: 0 auto;
+
+}
+
+.contants_text3 {
+    background-color: rgb(202, 207, 224);
+    height: 20px;
+    width:300px;
+    margin: 0 auto;
+}
+
+.contants_comment {
+    background-color: rgb(225, 204, 220);
+    width:300px;
+    margin: 0 auto;
+}
+
+.left {
+    text-align: left;
+}
